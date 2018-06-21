@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Fibonacci</string>
+    <string name="descr_plain">Plain addition</string>
+    <string name="descr_matrix">Matrix method</string>
+    <string name="descr_binet">Binet formula</string>
+    <string name="op_cancel">Operation was cancelled...</string>
+    <string name="calcul">Calculating...</string>
+</resources>

@@ -13,7 +13,7 @@ public class Fibonacci_count {
 
     }
 
-    public static BigInteger plain(int n){
+    public synchronized BigInteger plain(int n){
         if(n == 0) return BigInteger.ZERO;
         if (n <= 2) return BigInteger.ONE;
         BigInteger x = BigInteger.ONE;
@@ -28,7 +28,7 @@ public class Fibonacci_count {
         return res;
     }
 
-    public static BigInteger matrix(int n){
+    public synchronized BigInteger matrix(int n){
 
         BigInteger a = BigInteger.ONE;
         BigInteger ta;
@@ -62,7 +62,7 @@ public class Fibonacci_count {
         return rc;
     }
 
-    public static BigInteger binet(int n) {
+    public synchronized BigInteger binet(int n) {
 
         double index = Math.pow(5, 0.5);
         double left = (1 + index) / 2;

@@ -78,7 +78,7 @@ Thread thread;
         }
 
         countTask = new CountTask();
-        countTask.execute();
+        countTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
     }
 
     @SuppressLint("StaticFieldLeak")
@@ -101,16 +101,17 @@ Thread thread;
         @Override
         protected String doInBackground(Void... voids) {
             BigInteger res;
+            Fibonacci_count fibo = new Fibonacci_count();
                 switch (m) {
                     default:
                     case "Plain addition":
-                        res = Fibonacci_count.plain(num);
+                        res = fibo.plain(num);
                         break;
                     case "Matrix method":
-                        res = Fibonacci_count.matrix(num);
+                        res = fibo.matrix(num);
                         break;
                     case "Binet formula":
-                        res = Fibonacci_count.binet(num);
+                        res = fibo.binet(num);
                         break;
                 }
                 if(isCancelled())

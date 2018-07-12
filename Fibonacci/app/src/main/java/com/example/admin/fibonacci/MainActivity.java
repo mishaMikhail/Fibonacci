@@ -95,7 +95,7 @@ Thread thread;
             button.setText("Cancel");
             num = Integer.parseInt(editText.getText().toString());
             m = method;
-            result.setText(R.string.calcul);
+            result.setText(R.string.res_calc);
         }
 
         @Override

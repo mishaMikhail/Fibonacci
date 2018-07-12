@@ -62,7 +62,7 @@ public class Fibonacci_count {
         return rc;
     }
 
-    public synchronized BigInteger binet(int n) {
+    public synchronized BigInteger binet (int n) {
 
         double index = Math.pow(5, 0.5);
         double left = (1 + index) / 2;

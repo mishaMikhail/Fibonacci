@@ -7,7 +7,7 @@
     android:paddingLeft="10dp"
     android:paddingRight="10dp"
     android:paddingTop="10dp"
-    tools:context="com.example.admin.fibonacci.MainActivity">
+    tools:context="com.example.admin.fibonacci.FiboView">
 
 
     <TextView
@@ -41,7 +41,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="11"
-            android:hint="Fibonacci sequence num"
+            android:hint="@string/et_hint"
             android:maxLength="9"
             android:inputType="number"
             android:scrollHorizontally="true"
@@ -52,9 +52,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="4"
-            android:backgroundTint="@color/myButtonColor"
-            android:onClick="onClick"
-            android:text="Go"
+            android:background="@color/myButtonColor"
+            android:text="@string/bt_go"
             android:textColor="@android:color/background_light" />
 
     </LinearLayout>
@@ -63,7 +62,6 @@
         android:id="@+id/tv_descr"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/descr_binet"
         android:textAlignment="center"
         android:textSize="12sp"
         app:layout_constraintHorizontal_bias="0.501"

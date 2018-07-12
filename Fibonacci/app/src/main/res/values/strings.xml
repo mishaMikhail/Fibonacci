@@ -4,5 +4,9 @@
     <string name="descr_matrix">Matrix method</string>
     <string name="descr_binet">Binet formula</string>
     <string name="op_cancel">Operation was cancelled...</string>
-    <string name="calcul">Calculating...</string>
+    <string name="res_calc">Calculating...</string>
+    <string name="descr">Fibonacci number will be calculated via</string>
+    <string name="bt_go">Go</string>
+    <string name="bt_cancel">Cancel</string>
+    <string name="et_hint">Fibonacci sequence num</string>
 </resources>
